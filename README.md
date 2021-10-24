@@ -1,6 +1,6 @@
 # DeathPremiumCalculator
 
-Note: Please check project inside the Testapp folder
+Note: Please check project inside the Testapp folder(download Testapp folder).
 
 Open Solution with Visual studio 2019.<br/>
 UI is using Angular 8.<br/>
