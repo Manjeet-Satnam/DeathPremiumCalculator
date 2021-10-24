@@ -23,31 +23,14 @@ namespace DeathPremium.UI
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
-            //services.AddControllers().AddJsonOptions(j =>
-            //{
-            //    j.JsonSerializerOptions.Converters.Add(new JsonStringEnumConverter());
-            //});
-            //services.AddControllers().AddNewtonsoftJson(options =>
-            //{
-            //    options.SerializerSettings.ReferenceLoopHandling =
-            //       Newtonsoft.Json.ReferenceLoopHandling.Ignore;
-            //});
+          
             // In production, the Angular files will be served from this directory
             services.AddSpaStaticFiles(configuration =>
             {
                 configuration.RootPath = "ClientApp/dist";
             });
 
-            //services.AddCors(options =>
-            //{
-            //    options.AddPolicy("MyAllowSpecificOrigins",
-            //                      builder =>
-            //                      {
-            //                          builder.WithOrigins("*")
-            //                                              .AllowAnyMethod().AllowAnyHeader();
-                                                         
-            //                      });
-            //});
+         
            
         }
 
@@ -65,7 +48,7 @@ namespace DeathPremium.UI
                 app.UseHsts();
             }
 
-            //app.UseCors("MyAllowSpecificOrigins");
+          
 
             app.UseHttpsRedirection();
             app.UseStaticFiles();
