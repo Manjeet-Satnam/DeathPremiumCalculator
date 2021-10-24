@@ -13,10 +13,11 @@ There are four projects in the solution.<br/>
 UI is using Angular 8.<br/>
 API is using .net core 5.0.<br/>
 MSUnitTesting is used for test the code.<br/>
+Build UI project(DeathPremium.UI) before run the solution, it will download npm package.<br/>
 Calculation login is on the Service Layer inside the service folder.<br/>
 Choose solution as multiple startup Project ( API Project and UI Project).<br/>
 
-Angular page code url is below.
+Angular page code url is below.<br/>
 testapp/DeathPremium.UI/ClientApp/src/app/death-premium.
 
 Calculator page in inside the folder "death-premium".
