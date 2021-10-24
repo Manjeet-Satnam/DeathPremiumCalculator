@@ -1,0 +1,9 @@
+C:\Users\mkaur\source\repos\DeathPremiumCalculator\DeathPremium.Services\bin\Debug\netstandard2.0\DeathPremium.Services.deps.json
+C:\Users\mkaur\source\repos\DeathPremiumCalculator\DeathPremium.Services\bin\Debug\netstandard2.0\DeathPremium.Services.dll
+C:\Users\mkaur\source\repos\DeathPremiumCalculator\DeathPremium.Services\bin\Debug\netstandard2.0\DeathPremium.Services.pdb
+C:\Users\mkaur\source\repos\DeathPremiumCalculator\DeathPremium.Services\obj\Debug\netstandard2.0\DeathPremium.Services.csprojAssemblyReference.cache
+C:\Users\mkaur\source\repos\DeathPremiumCalculator\DeathPremium.Services\obj\Debug\netstandard2.0\DeathPremium.Services.AssemblyInfoInputs.cache
+C:\Users\mkaur\source\repos\DeathPremiumCalculator\DeathPremium.Services\obj\Debug\netstandard2.0\DeathPremium.Services.AssemblyInfo.cs
+C:\Users\mkaur\source\repos\DeathPremiumCalculator\DeathPremium.Services\obj\Debug\netstandard2.0\DeathPremium.Services.csproj.CoreCompileInputs.cache
+C:\Users\mkaur\source\repos\DeathPremiumCalculator\DeathPremium.Services\obj\Debug\netstandard2.0\DeathPremium.Services.dll
+C:\Users\mkaur\source\repos\DeathPremiumCalculator\DeathPremium.Services\obj\Debug\netstandard2.0\DeathPremium.Services.pdb

@@ -1,0 +1,83 @@
+<div class="container">
+  <div class="row" style="margin-top:20px;">
+    <div class="col-md-12">
+      <h2>Monthly Death Premium Calculator</h2>
+      </div>
+    </div>
+      <div class="row" style="margin-top:40px;">
+        <div class="col-md-12">
+          <form class="example-form">
+
+            <div class="row">
+              <div class="col-md-4">
+                <mat-form-field class="example-full-width" appearance="fill">
+                  <mat-label>Name:</mat-label>
+                  <input matInput placeholder="please enter name" [formControl]="Name" required>
+                  <mat-error *ngIf="Name.invalid">{{getErrorMessage()}}</mat-error>
+                </mat-form-field>
+              </div>
+              <div class="col-md-4">
+                <mat-form-field appearance="fill">
+                  <mat-label>Choose Date of Birth</mat-label>
+                  <input matInput [matDatepicker]="picker" (dateChange)="calculateAge($event)" [formControl]="DOB" required>
+                  <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                  <mat-datepicker #picker></mat-datepicker>
+                  <mat-error *ngIf="DOB.invalid">{{getErrorMessage()}}</mat-error>
+                </mat-form-field>
+              </div>
+            </div>
+            <div class="row">
+
+              <div class="col-md-4">
+                <mat-form-field class="example-full-width" appearance="fill">
+                  <mat-label>Age:</mat-label>
+                  <input matInput placeholder="please enter age" [formControl]="Age" required [(ngModel)]="age">
+                  <mat-error *ngIf="Age.invalid">{{getErrorMessage()}}</mat-error>
+                </mat-form-field>
+              </div>
+              <div class="col-md-4">
+                <mat-form-field class="example-full-width" appearance="fill">
+                  <mat-label>Death-Sum Insured:</mat-label>
+                  <input matInput placeholder="please enter amount" [formControl]="SumInsured" required>
+                  <mat-error *ngIf="SumInsured.invalid">{{getErrorMessage()}}</mat-error>
+                </mat-form-field>
+
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4">
+                <mat-form-field>
+                  <mat-label>Select Occupation</mat-label>
+                  <mat-select placeholder="Select Occupation" (selectionChange)="CalcDeathPremium($event)" [formControl]="Occupation" required>
+                    <mat-option disabled>None</mat-option>
+                    <mat-option *ngFor="let occp of occupationList" [value]="occp.rating">{{ occp.occupation }}</mat-option>
+                  </mat-select>
+                  <mat-error *ngIf="Occupation.invalid">{{getErrorMessage()}}</mat-error>
+                </mat-form-field>
+              </div>
+            </div>
+            <div class="row" style="margin-top:50px;">
+              <div class="col-md-2"></div>
+                <div class="col-md-8">
+                  <mat-form-field class="example-full-width" appearance="fill">
+                    <mat-label>Death Premium Amount:</mat-label>
+                    <input matInput disabled>{{premiumAmount}}
+                  </mat-form-field>
+                </div>
+              </div>
+
+            <div class="row">
+              <div class="col-md-2"></div>
+              <div class="col-md-10">
+                <mat-form-field class="example-full-width" appearance="fill" color="red!important">
+                  <input matInput disabled>{{errormsg}}
+
+                </mat-form-field>
+              </div>
+            </div>
+
+</form>
+        </div>
+      </div>
+    </div>
+
