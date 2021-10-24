@@ -88,21 +88,6 @@ export class DeathPremiumComponent implements OnInit {
             this.Occupation.hasError('required') ? 'You must select Occupation' :
               '';
 
-    //  if (this.Name.hasError('required')) {
-    //    return 'You must enter Name';
-    //  }
-    //  else if (this.Age.hasError('required')) {
-    //    return 'You must enter Age';
-    //  }
-    //  else if (this.DOB.hasError('required')) {
-    //    return 'You must enter Date of Birth';
-    //  }
-    //  else if (this.SumInsured.hasError('required')) {
-    //    return 'You must enter Death Sum Insured Amount';
-    //  }
-    //  else if (this.Occupation.hasError('required')) {
-    //    return 'You must select Occupation';
-    //  }
   }
   ngOnInit() {
     this.fetchOccupation();
